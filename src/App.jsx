@@ -1,8 +1,13 @@
 import React from 'react'
+import { Todo } from './components/Todo'
+// import { Homepage } from './components/homepage'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      {/* <Homepage/> */}
+      <Todo/>
+    </div>
   )
 }
 
