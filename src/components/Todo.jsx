@@ -31,7 +31,16 @@ export const Todo = () => {
     // Use of the spread operator to update the list
     setTodoList((prev) => [...prev, newTodo]);
     inputRef.current.value = "";
-  };
+  }
+
+  // function to handle the task when it is done
+  const deleteTodo = (id) => {
+    // looks if all todos items have the same id 
+    // as the one which is the paramenter
+    setTodoList((previousTodos) => {
+      return previousTodos.filter((todo) => todo.id !== id)
+    })
+  }
 
   return (
     <>
@@ -59,6 +68,7 @@ export const Todo = () => {
                   text={item.text}
                   id={item.id}
                   isComplete={item.isComplete}
+                  deleteTodo={deleteTodo}
                 />
               );
             })}

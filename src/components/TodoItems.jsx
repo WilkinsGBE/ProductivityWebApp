@@ -4,7 +4,7 @@ import tick from "../assets/tick.png";
 import not_tick from "../assets/not_tick.png";
 import delete_icon from "../assets/delete.png";
 
-const TodoItems = ({text, id, isComplete}) => {
+const TodoItems = ({text, id, isComplete, deleteTodo}) => {
   return (
     <>
       <div className="todolist">
@@ -12,7 +12,7 @@ const TodoItems = ({text, id, isComplete}) => {
           <img src={tick} alt="" />
           <p>{text}</p>
         </div>
-        <img className="delete-icon " src={delete_icon} alt="" />
+        <img onClick={() => {deleteTodo(id)}} className="delete-icon " src={delete_icon} alt="" />
       </div>
     </>
   );
