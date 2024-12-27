@@ -126,6 +126,11 @@ input::placeholder {
   color: #3F3F46;
 }
 
+.list p.line-through {
+  text-decoration: line-through;
+  text-decoration-thickness: 30px;
+}
+
 .delete-icon {
   cursor: pointer;
   width: 14px;

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../style/TodoApp.css";
 import todo_icon from "../assets/todo_icon.png";
 import TodoItems from "./TodoItems";
@@ -31,16 +31,36 @@ export const Todo = () => {
     // Use of the spread operator to update the list
     setTodoList((prev) => [...prev, newTodo]);
     inputRef.current.value = "";
-  }
+  };
 
   // function to handle the task when it is done
   const deleteTodo = (id) => {
-    // looks if all todos items have the same id 
+    // looks if all todos items have the same id
     // as the one which is the paramenter
     setTodoList((previousTodos) => {
-      return previousTodos.filter((todo) => todo.id !== id)
-    })
+      return previousTodos.filter((todo) => todo.id !== id);
+    });
+  };
+
+  //similar to the deleteTodo function
+  //map the list of prevtodos and and return true or false
+  const toggle = (id) => {
+    setTodoList((previousTodos) => {
+      return previousTodos.map((todo) => {
+        if (todo.id === id) {
+          // if it is true it returns false
+          // or if it is false it returns true
+          return { ...todo, isComplete: !todo.isComplete };
+        }
+        return todo;
+      });
+    });
   }
+
+  // dependancy array
+  useEffect(() => {
+    console.log(todoList)
+  },[todoList])
 
   return (
     <>
@@ -69,6 +89,7 @@ export const Todo = () => {
                   id={item.id}
                   isComplete={item.isComplete}
                   deleteTodo={deleteTodo}
+                  toggle={toggle}
                 />
               );
             })}
