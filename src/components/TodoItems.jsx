@@ -4,7 +4,7 @@ import tick from "../assets/tick.png";
 import not_tick from "../assets/not_tick.png";
 import delete_icon from "../assets/delete.png";
 
-const TodoItems = ({text}) => {
+const TodoItems = ({text, id, isComplete}) => {
   return (
     <>
       <div className="todolist">
