@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/TodoApp.css";
-import tick from "../assets/tick.png";
+import tick from "../assets/greentick.png";
 import not_tick from "../assets/not_tick.png";
 import delete_icon from "../assets/delete.png";
 
