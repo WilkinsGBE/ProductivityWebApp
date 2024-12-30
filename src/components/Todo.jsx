@@ -5,7 +5,12 @@ import TodoItems from "./TodoItems";
 
 export const Todo = () => {
   // Function to update the todo-list
-  const [todoList, setTodoList] = useState([]);
+  // we show the items that are already in the local storage
+  const [todoList, setTodoList] = useState(
+    localStorage.getItem("todos")
+      ? JSON.parse(localStorage.getItem("todos"))
+      : []
+  );
 
   // a function to manipulate what is inside the input field
   const inputRef = useRef();
@@ -55,12 +60,13 @@ export const Todo = () => {
         return todo;
       });
     });
-  }
+  };
 
   // dependancy array
   useEffect(() => {
-    console.log(todoList)
-  },[todoList])
+    //storing the task in the browser storage
+    localStorage.setItem("todos", JSON.stringify(todoList));
+  }, [todoList]);
 
   return (
     <>
