@@ -70,35 +70,37 @@ export const Todo = () => {
 
   return (
     <>
-      <div className="body">
-        <div className="box">
-          {/* -------- Title ------- */}
-          <div className="header">
-            <img src={todo_icon} alt="" />
-            <h1>To-Do List</h1>
-          </div>
-          {/* ------ Input box ------ */}
-          <div className="input">
-            <input ref={inputRef} type="text" placeholder="Add your task" />
-            <button onClick={add}>ADD</button>
-          </div>
+      <div className="todo">
+        <div className="body">
+          <div className="box">
+            {/* -------- Title ------- */}
+            <div className="header">
+              <img src={todo_icon} alt="" />
+              <h1>To-Do List</h1>
+            </div>
+            {/* ------ Input box ------ */}
+            <div className="input">
+              <input ref={inputRef} type="text" placeholder="Add your task" />
+              <button onClick={add}>ADD</button>
+            </div>
 
-          {/* ----- To-do list --------- */}
-          <div className="todo-items">
-            {/* Parsing in each newTodo object that have been created 
+            {/* ----- To-do list --------- */}
+            <div className="todo-items">
+              {/* Parsing in each newTodo object that have been created 
             with the add button to add them to the TodoItems arrays */}
-            {todoList.map((item, index) => {
-              return (
-                <TodoItems
-                  key={index}
-                  text={item.text}
-                  id={item.id}
-                  isComplete={item.isComplete}
-                  deleteTodo={deleteTodo}
-                  toggle={toggle}
-                />
-              );
-            })}
+              {todoList.map((item, index) => {
+                return (
+                  <TodoItems
+                    key={index}
+                    text={item.text}
+                    id={item.id}
+                    isComplete={item.isComplete}
+                    deleteTodo={deleteTodo}
+                    toggle={toggle}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
