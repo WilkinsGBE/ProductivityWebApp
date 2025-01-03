@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { Todo } from './components/TodoApp/Todo';
 import { Homepage } from './components/Homepage/Homepage';
+import { Pomodoro } from './components/PomodoroApp/Pomodoro';
 
 const App = () => {
   return (
@@ -15,11 +16,12 @@ const App = () => {
             <li>
               <Link to="/todo">To-Do</Link>
             </li>
-            {/* Uncomment and add these when the components are ready */}
-            {/* <li>
+           
+             <li>
               <Link to="/pomodoro">Pomodoro</Link>
-            </li>
-            <li>
+            </li> 
+            {/* Uncomment and add these when the components are ready */}
+            {/*<li>
               <Link to="/notes">Notes</Link>
             </li> */}
           </ul>
@@ -28,8 +30,8 @@ const App = () => {
           {/* Set the Homepage as the default path */}
           <Route path="/" element={<Homepage />} />
           <Route path="/todo" element={<Todo />} />
-          {/* <Route path="/pomodoro" element={<Pomodoro />} />
-          <Route path="/notes" element={<Notes />} /> */}
+          <Route path="/pomodoro" element={<Pomodoro />} />
+          {/*<Route path="/notes" element={<Notes />} /> */}
         </Routes>
       </div>
     </Router>
