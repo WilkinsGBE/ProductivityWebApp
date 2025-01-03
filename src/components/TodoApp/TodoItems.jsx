@@ -1,8 +1,8 @@
 import React from "react";
-import "../style/TodoApp.css";
-import tick from "../assets/greentick.png";
-import not_tick from "../assets/not_tick.png";
-import delete_icon from "../assets/delete.png";
+import "./TodoApp.css";
+import tick from "../../assets/greentick.png";
+import not_tick from "../../assets/not_tick.png";
+import delete_icon from "../../assets/delete.png";
 
 const TodoItems = ({ text, id, isComplete, deleteTodo, toggle }) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Todo } from './components/Todo';
-import { Homepage } from './components/Homepage';
+import { Todo } from './components/TodoApp/Todo';
+import { Homepage } from './components/Homepage/Homepage';
 
 const App = () => {
   return (
