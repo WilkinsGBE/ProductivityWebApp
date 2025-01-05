@@ -31,9 +31,9 @@ nav {
   padding: 10px 20px;
   background: linear-gradient(
     90deg,
-    rgba(43, 70, 237, 1) 0%,   /* Start with the blue color */
-    rgba(1, 135, 51, 1) 50%,   /* Transition to the green */
-    rgba(128, 0, 0, 1) 100%    /* Finish with the dark red */
+    rgba(43, 70, 237, 1) 0%,   
+    rgba(1, 135, 51, 1) 50%,  
+    rgba(128, 0, 0, 1) 100%    
 );
 }
 
@@ -137,6 +137,7 @@ nav ul li.note:hover a {
   color: white;
   font-weight: bold;
   height: 40px;
+  width: 100px;
   padding: 0 16px;
   cursor: pointer;
 }
