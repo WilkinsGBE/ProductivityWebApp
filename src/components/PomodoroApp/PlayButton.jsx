@@ -3,7 +3,7 @@ import "./PomodoroApp.css";
 
 export const PlayButton = (props) => {
   return (
-    <div className={props.className}>
+    <div className="play-button">
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"

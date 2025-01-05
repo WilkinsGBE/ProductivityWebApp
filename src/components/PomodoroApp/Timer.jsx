@@ -25,14 +25,12 @@ export const Timer = () => {
           })}
         />
       </div>
-      <div className="buttons">
-        <div>
-          <PlayButton className=""/>
-          <PauseButton className="pause-button"/>
-        </div>
-        <div>
-          <SettingsButton className="settings-button" />
-        </div>
+      <div className="play-pause">
+        <PlayButton className="play-button" />
+        <PauseButton className="pause-button" />
+      </div>
+      <div className="settings">
+        <SettingsButton className="settings-button" />
       </div>
     </div>
   );
