@@ -123,3 +123,19 @@ button:hover .size-6 {
   height: 40px;
   border-radius: 20px;
 }
+
+.back-button {
+  width: auto;
+  background-color:rgba(255,255,255,0.3);
+  border-radius:10px;
+  padding: 10px 10px;
+  margin-top: 30px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+.back-button svg {
+  width: 34px; 
+  height: 34px;
+  padding-right: 8px;
+}
