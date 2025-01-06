@@ -14,8 +14,8 @@ export const Timer = () => {
     <div>
       <div>
         <CircularProgressbar
-          value={60}
-          text={`${60}%`}
+          value={45}
+          text={`${45}%`}
           styles={buildStyles({
             rotation: 0,
             strokeLinecap: "round",

@@ -13,6 +13,7 @@
     rgba(0, 0, 0, 1) 100% 
  */
   color: white;
+  height: 100vh;
 }
 
 main {
@@ -20,7 +21,6 @@ main {
   max-width: 340px;
   margin: 0 auto 20px auto;
   text-align: center;
-  height: 100vh;
 }
 
 button {
@@ -52,6 +52,21 @@ button {
 
 .settings-button {
   width: 25%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flexbox;
+  flex-direction: row;
 } 
+
+.settings-button svg {
+  margin-right: 10px;
+}
+
+.settings-button span {
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
 
 

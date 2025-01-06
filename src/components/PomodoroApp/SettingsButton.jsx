@@ -25,6 +25,7 @@ export const SettingsButton = (props) => {
           />
         </svg>
       </button>
+      <span>Settings</span>
     </div>
   );
 };
