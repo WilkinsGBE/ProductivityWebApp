@@ -5,7 +5,7 @@ import { SettingsContext } from "./SettingsContext";
 import { BackButton } from "./BackButton";
 
 export const Settings = () => {
-    const settingsInfo = useContext(SettingsContext);
+  const settingsInfo = useContext(SettingsContext);
   return (
     <>
       <div className="settings-page">
@@ -15,7 +15,7 @@ export const Settings = () => {
           thumbClassName="thumb"
           trackClassName="track"
           value={settingsInfo.workMinutes}
-          onChange={newValue => settingsInfo.setWorkMinutes(newValue)}
+          onChange={(newValue) => settingsInfo.setWorkMinutes(newValue)}
           min={1}
           max={120}
         />
@@ -25,11 +25,11 @@ export const Settings = () => {
           thumbClassName="thumb"
           trackClassName="track"
           value={settingsInfo.breakMinutes}
-          onChange={newValue => settingsInfo.setBreakMinutes(newValue)}
+          onChange={(newValue) => settingsInfo.setBreakMinutes(newValue)}
           min={1}
           max={30}
         />
-        <BackButton />
+        <BackButton onClick={() => settingsInfo.setShowSettings(false)} />
       </div>
     </>
   );

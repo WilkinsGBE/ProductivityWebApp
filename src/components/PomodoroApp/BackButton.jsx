@@ -1,10 +1,12 @@
 import React from "react";
 import "./PomodoroApp.css";
 
-export const BackButton = () => {
+export const BackButton = (props) => {
   return (
     <div>
-      <button className="back-button">
+      <button 
+        onClick={props.onClick}
+        className="back-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -33,14 +33,6 @@ button {
   align-items: center;
 }
 
-button:hover span {
-  color: green;
-}
-
-button:hover .size-6 {
-  stroke: green;
-}
-
 /* the 1st container with both button */
 .play-pause {
   margin-top: 40px;
@@ -71,6 +63,10 @@ button:hover .size-6 {
   justify-content: center; 
   align-items: center; 
   gap: 100px;
+}
+
+.settings-button:hover {
+  background-color: black;
 }
 
 .settings-button svg {
@@ -132,6 +128,10 @@ button:hover .size-6 {
   margin-top: 30px;
   font-size: 1.4rem;
   line-height: 36px;
+}
+
+.back-button:hover {
+  background-color: black;
 }
 
 .back-button svg {

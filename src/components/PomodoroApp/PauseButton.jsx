@@ -4,7 +4,7 @@ import "./PomodoroApp.css";
 export const PauseButton = (props) => {
   return (
     <div className={props.className}>
-      <button >
+      <button onClick={props.onClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

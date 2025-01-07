@@ -3,9 +3,11 @@ import "./PomodoroApp.css";
 
 export const SettingsButton = (props) => {
   return (
+    // Add the className prop to the div element
     <div className={props.className}>
       <div>
-        <button>
+        {/* Add the onClick prop to the button element because otherwise it wont work*/}
+        <button onClick={props.onClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
