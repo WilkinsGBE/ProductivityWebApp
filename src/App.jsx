@@ -27,7 +27,7 @@ const App = () => {
     <Router>
       <div>
         <nav>
-          {/* App Title (always visible) */}
+          {/* App Title - always visible */}
           <div className="title">Productivity Web App</div>
 
           {/* "Bars" icon for opening the menu */}
@@ -36,13 +36,13 @@ const App = () => {
               icon={faBars}
               size="2x"
               onClick={openmenu}
-              className="open-menu-icon"
+              className={`open-menu-icon ${isMenuOpen ? "open" : ""}`}
             />
           )}
 
           {/* Menu Container */}
           {isMenuOpen && (
-            <div className="menu-container">
+            <div className={`menu-container ${isMenuOpen ? "open" : ""}`}>
               {/* Close icon */}
               <FontAwesomeIcon
                 icon={faXmark}
@@ -70,13 +70,13 @@ const App = () => {
                   href="https://www.linkedin.com/in/ariel-wilkins-saintil-a79207286/"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
                 <a href="https://github.com/WilkinsGBE" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
                 <a href="https://www.instagram.com/wilkinss.1/" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={faInstagram} size="2x"/>
                 </a>
               </div>
             </div>

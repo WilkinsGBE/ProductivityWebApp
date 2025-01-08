@@ -33,10 +33,10 @@ nav {
   padding: 10px 20px;
   background: linear-gradient(
     90deg,
-    rgba(43, 70, 237, 1) 0%,   
-    rgba(1, 135, 51, 1) 50%,  
-    rgba(128, 0, 0, 1) 100%    
-);
+    rgba(43, 70, 237, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(128, 0, 0, 1) 100%
+  );
 }
 
 nav ul {
@@ -233,6 +233,36 @@ input::placeholder {
   .delete-icon {
     width: 12px; /* Reduce delete icon size */
   }
+
+  .open-menu-icon {
+    display: block;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-container.open {
+    display: block;
+  }
+
+  .close-menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: block;
+  }
 }
 
 /* Mobile Screen */
@@ -272,10 +302,55 @@ input::placeholder {
     padding-right: 10px;
   }
 
-  .nav {
-    
+  .title {
+    font-size: 20px; /* Adjust font size as needed */
   }
 
+  .nav {
+  }
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    transition: right 0.3s ease-in-out;
+    padding: 15px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+  }
+
+  .menu-container.open {
+    right: 0;
+  }
+
+  .open-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-menu-icon {
+    color: black;
+  }
+
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
 
   /* 
     nav {
