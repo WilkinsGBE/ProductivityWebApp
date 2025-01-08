@@ -143,3 +143,10 @@ button {
   height: 34px;
   padding-right: 8px;
 }
+
+/* Media Queries for Mobile devices */
+@media (max-width: 480px) {
+  .main {
+    
+  }
+}
