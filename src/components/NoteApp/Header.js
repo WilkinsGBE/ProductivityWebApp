@@ -12,7 +12,7 @@ export const Header = ({ handleToggleDarkMode }) => {
         }
         className="toggle"
       >
-        {toggleMode} mode
+        Toggle Mode
       </button>
     </div>
   );

@@ -4,23 +4,29 @@ import { nanoid } from "nanoid";
 import "./NoteApp.css";
 import { Search } from "./Search";
 import { Header } from "./Header";
+import { useEffect } from "react";
 
 export const NotesApp = () => {
   const [notes, setNotes] = useState([
-    {
-      id: nanoid(),
-      text: "This is my first note!",
-      date: "09/01/2025",
-    },
-    {
-      id: nanoid(),
-      text: "This is my second note!",
-      date: "09/01/2024",
-    },
   ]);
 
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem('React-NotesApp-data'));
+
+    if (savedNotes) {
+      setNotes(savedNotes);
+    }
+    // will only run on the first load of the page
+  }, []);
+
+  // Saving the notes in the local Storage
+  useEffect(() => {
+    console.log("saving notes", notes)
+    localStorage.setItem('React-NotesApp-data', JSON.stringify(notes));
+  }, [notes]);
 
   const addNote = (text) => {
     const date = new Date();
@@ -41,7 +47,7 @@ export const NotesApp = () => {
 
   return (
     // the background will change depending on this
-    <div className={`${darkMode && 'dark-mode'}`}>
+    <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
         <Header handleToggleDarkMode={setDarkMode} />
         <Search handleSearchNote={setSearchText} />
