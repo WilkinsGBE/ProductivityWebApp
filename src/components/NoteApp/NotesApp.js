@@ -3,6 +3,7 @@ import { NotesList } from "./NotesList";
 import { nanoid } from "nanoid";
 import "./NoteApp.css";
 import { Search } from "./Search";
+import { Header } from "./Header";
 
 export const NotesApp = () => {
   const [notes, setNotes] = useState([
@@ -19,6 +20,7 @@ export const NotesApp = () => {
   ]);
 
   const [searchText, setSearchText] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
 
   const addNote = (text) => {
     const date = new Date();
@@ -38,17 +40,21 @@ export const NotesApp = () => {
   };
 
   return (
-    <div className="container">
-      <Search handleSearchNote={setSearchText} />
-      <NotesList
-        notes={notes.filter(
-          (note) =>
-            // this will return only the note that are equal to what is in the search bar
-            note.text.toLowerCase().includes(searchText.trim().toLowerCase()) // Normalize searchText by trimming and converting to lowercase
-        )}
-        handleAddNote={addNote}
-        handleDeleteNote={deleteNote}
-      />
+    // the background will change depending on this
+    <div className={`${darkMode && 'dark-mode'}`}>
+      <div className="container">
+        <Header handleToggleDarkMode={setDarkMode} />
+        <Search handleSearchNote={setSearchText} />
+        <NotesList
+          notes={notes.filter(
+            (note) =>
+              // this will return only the note that are equal to what is in the search bar
+              note.text.toLowerCase().includes(searchText.trim().toLowerCase()) // Normalize searchText by trimming and converting to lowercase
+          )}
+          handleAddNote={addNote}
+          handleDeleteNote={deleteNote}
+        />
+      </div>
     </div>
   );
 };
