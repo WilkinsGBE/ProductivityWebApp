@@ -1,0 +1,32 @@
+.container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.notes-list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    /* auto-fit will fit each of the columns based on the width size */
+    /* this single line of code makes the notes-list app 
+    responsive based on the screen size. 1fr is the frame of the div */
+}
+
+.note {
+    background-color: #FFFF88;
+    border-radius: 10px;
+    padding: 1rem; /* so the notes are not to close of the edge */
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

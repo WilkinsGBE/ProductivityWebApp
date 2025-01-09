@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Todo } from "./components/TodoApp/Todo";
 import { Homepage } from "./components/Homepage/Homepage";
 import { Pomodoro } from "./components/PomodoroApp/Pomodoro";
-import { Notes } from "./components/NoteApp/Notes";
+import { NotesApp } from "./components/NoteApp/NotesApp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -86,7 +86,7 @@ const App = () => {
           {/* Set the Homepage as the default path */}
           <Route path="/" element={<Homepage />} />
           <Route path="/todo" element={<Todo />} />
-          <Route path="/notes" element={<Notes />} />
+          <Route path="/notes" element={<NotesApp />} />
           <Route path="/pomodoro" element={<Pomodoro />} />
         </Routes>
       </div>
