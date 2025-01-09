@@ -3,15 +3,20 @@ import { Note } from "./Note";
 import { AddNotes } from "./AddNotes";
 import "./NoteApp.css";
 
-export const NotesList = ({ notes, handleAddNote }) => {
+export const NotesList = ({ notes, handleAddNote, handleDeleteNote }) => {
   return (
     <div>
       <div className="notes-list">
         {/* Displaying all the notes dynamically (based on the number of notes) */}
         {notes.map((note) => (
-          <Note id={note.id} text={note.text} date={note.date} />
+          <Note
+            id={note.id}
+            text={note.text}
+            date={note.date}
+            handleDeleteNote={handleDeleteNote}
+          />
         ))}
-        <AddNotes handleAddNote={handleAddNote}/>
+        <AddNotes handleAddNote={handleAddNote} />
       </div>
     </div>
   );

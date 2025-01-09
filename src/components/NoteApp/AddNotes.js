@@ -3,17 +3,20 @@ import "./NoteApp.css";
 
 export const AddNotes = ({ handleAddNote }) => {
   const [noteText, setNoteText] = useState("");
+  const characterLimit = 200;
 
   const handleChange = (event) => {
-    // the setNoteText will change everytime new text get inputed
-    setNoteText(event.target.value);
+    if (characterLimit - event.target.value.length >= 0) {
+      // the setNoteText will change everytime new text get inputed
+      setNoteText(event.target.value);
+    }
   };
 
   const handleSaveClick = () => {
     //check if the note is empty
     if (noteText.trim().length > 0) {
       handleAddNote(noteText);
-      setNoteText(''); //reset the textarea
+      setNoteText(""); //reset the textarea
     }
   };
 
@@ -27,7 +30,7 @@ export const AddNotes = ({ handleAddNote }) => {
         onChange={handleChange}
       ></textarea>
       <div className="note-footer">
-        <small>200 Remaining</small>
+        <small>{characterLimit - noteText.length} characters remaining</small>
         <button className="save" onClick={handleSaveClick}>
           Save
         </button>
