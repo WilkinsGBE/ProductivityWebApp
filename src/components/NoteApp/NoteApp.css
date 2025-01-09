@@ -88,3 +88,22 @@ textarea:focus {
       transform: translateX(5px);
     }
   }
+
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: rgba(233, 233, 233);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1.5em;
+}
+
+.search input {
+    background-color: rgba(233, 233, 233);
+    border: none;
+}
+
+/* when the user clicks on it, or is mouse is focus on it */
+.search input:focus {
+    outline: none;
+}

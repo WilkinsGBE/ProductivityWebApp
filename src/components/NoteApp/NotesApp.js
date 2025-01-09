@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NotesList } from "./NotesList";
 import { nanoid } from "nanoid";
 import "./NoteApp.css";
+import { Search } from "./Search";
 
 export const NotesApp = () => {
   const [notes, setNotes] = useState([
@@ -15,22 +16,9 @@ export const NotesApp = () => {
       text: "This is my second note!",
       date: "09/01/2024",
     },
-    {
-      id: nanoid(),
-      text: "This is my third note!",
-      date: "09/01/2026",
-    },
-    {
-      id: nanoid(),
-      text: "This is my fourth note!",
-      date: "20/04/2025",
-    },
-    {
-      id: nanoid(),
-      text: "This is my NEW note!",
-      date: "xx/xx/2025",
-    },
   ]);
+
+  const [searchText, setSearchText] = useState("");
 
   const addNote = (text) => {
     const date = new Date();
@@ -51,8 +39,13 @@ export const NotesApp = () => {
 
   return (
     <div className="container">
+      <Search handleSearchNote={setSearchText} />
       <NotesList
-        notes={notes}
+        notes={notes.filter(
+          (note) =>
+            // this will return only the note that are equal to what is in the search bar
+            note.text.toLowerCase().includes(searchText.trim().toLowerCase()) // Normalize searchText by trimming and converting to lowercase
+        )}
         handleAddNote={addNote}
         handleDeleteNote={deleteNote}
       />
