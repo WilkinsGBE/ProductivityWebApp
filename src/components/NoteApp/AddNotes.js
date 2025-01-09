@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import "./NoteApp.css";
 
-export const AddNotes = () => {
+export const AddNotes = ({ handleAddNote }) => {
   const [noteText, setNoteText] = useState("");
+
   const handleChange = (event) => {
     // the setNoteText will change everytime new text get inputed
-    setNoteText(event.targer.value);
-  }
+    setNoteText(event.target.value);
+  };
 
   const handleSaveClick = () => {
-    
-  }
+    //check if the note is empty
+    if (noteText.trim().length > 0) {
+      handleAddNote(noteText);
+      setNoteText(''); //reset the textarea
+    }
+  };
+
   return (
     <div className="note new">
       <textarea
@@ -22,7 +28,9 @@ export const AddNotes = () => {
       ></textarea>
       <div className="note-footer">
         <small>200 Remaining</small>
-        <button className="save" onClick={handleSaveClick}>Save</button>
+        <button className="save" onClick={handleSaveClick}>
+          Save
+        </button>
       </div>
     </div>
   );
