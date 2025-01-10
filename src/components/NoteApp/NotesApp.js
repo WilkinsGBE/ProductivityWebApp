@@ -42,7 +42,7 @@ export const NotesApp = () => {
   };
 
   return (
-    <div className={`${darkMode && "dark-mode"}`}>
+    <div className={`${darkMode ? "dark-mode": "light-mode"}`}>
       <div className="container">
         <Header handleToggleDarkMode={setDarkMode} />
         <Search handleSearchNote={setSearchText} />

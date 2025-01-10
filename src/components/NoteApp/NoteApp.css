@@ -129,6 +129,14 @@ textarea:focus {
     cursor: pointer;
 }
 
+.light-mode {
+  background-color: white;
+}
+
+.light-mode h1 {
+  color: black;
+}
+
 .dark-mode {
     background-color: black;
 }
