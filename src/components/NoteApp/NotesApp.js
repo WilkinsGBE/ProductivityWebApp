@@ -1,31 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NotesList } from "./NotesList";
 import { nanoid } from "nanoid";
 import "./NoteApp.css";
 import { Search } from "./Search";
 import { Header } from "./Header";
-import { useEffect } from "react";
 
 export const NotesApp = () => {
-  const [notes, setNotes] = useState([
-  ]);
+  // Retrieve notes from localStorage or use default notes
+  const [notes, setNotes] = useState(() => {
+    const savedNotes = localStorage.getItem("react-notes-app-data");
+    return savedNotes ? JSON.parse(savedNotes) : [
+      {
+        id: nanoid(),
+        text: "This is the example of a Note",
+        date: "08/01/2025",
+      }
+    ];
+  });
 
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
+  // Save notes to localStorage whenever the notes state changes
   useEffect(() => {
-    const savedNotes = JSON.parse(localStorage.getItem('React-NotesApp-data'));
-
-    if (savedNotes) {
-      setNotes(savedNotes);
-    }
-    // will only run on the first load of the page
-  }, []);
-
-  // Saving the notes in the local Storage
-  useEffect(() => {
-    console.log("saving notes", notes)
-    localStorage.setItem('React-NotesApp-data', JSON.stringify(notes));
+    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
   }, [notes]);
 
   const addNote = (text) => {
@@ -36,26 +34,21 @@ export const NotesApp = () => {
       date: date.toLocaleDateString(),
     };
 
-    const newNotes = [...notes, newNote];
-    setNotes(newNotes);
+    setNotes((prevNotes) => [...prevNotes, newNote]);
   };
 
   const deleteNote = (id) => {
-    const newNotes = notes.filter((note) => note.id !== id);
-    setNotes(newNotes);
+    setNotes((prevNotes) => prevNotes.filter((note) => note.id !== id));
   };
 
   return (
-    // the background will change depending on this
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
         <Header handleToggleDarkMode={setDarkMode} />
         <Search handleSearchNote={setSearchText} />
         <NotesList
-          notes={notes.filter(
-            (note) =>
-              // this will return only the note that are equal to what is in the search bar
-              note.text.toLowerCase().includes(searchText.trim().toLowerCase()) // Normalize searchText by trimming and converting to lowercase
+          notes={notes.filter((note) =>
+            note.text.toLowerCase().includes(searchText.trim().toLowerCase())
           )}
           handleAddNote={addNote}
           handleDeleteNote={deleteNote}
