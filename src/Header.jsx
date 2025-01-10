@@ -7,6 +7,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import "./components/TodoApp/TodoApp.css";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +30,8 @@ export const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div className="header">
-      <h1>Notes</h1>
+    <div className="Main-header">
+      <h1>Productivity Web App</h1>
 
       {/* Mobile Menu - Only show if screen width < 768px */}
       {isMobile && !isMenuOpen && (
@@ -94,45 +95,49 @@ export const Header = () => {
 
       {/* Desktop Links (Always visible if screen width >= 768px) */}
       {!isMobile && (
-        <div className="desktop-nav-links">
-          <ul>
-            <li className="home">
-              <Link to="/">Homepage</Link>
-            </li>
-            <li className="todos">
-              <Link to="/todo">To-Do</Link>
-            </li>
-            <li className="notes">
-              <Link to="/notes">Notes</Link>
-            </li>
-            <li className="pomo">
-              <Link to="/pomodoro">Pomodoro</Link>
-            </li>
-          </ul>
-          <div className="social-icons">
-            <a
-              href="https://www.linkedin.com/in/ariel-wilkins-saintil-a79207286/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </a>
-            <a
-              href="https://github.com/WilkinsGBE"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-            <a
-              href="https://www.instagram.com/wilkinss.1/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
+        <>
+          <div className="header-links">
+            <div className="pages-nav-links">
+              <ul>
+                <li className="home">
+                  <Link to="/">Homepage</Link>
+                </li>
+                <li className="todos">
+                  <Link to="/todo">To-Do</Link>
+                </li>
+                <li className="notes">
+                  <Link to="/notes">Notes</Link>
+                </li>
+                <li className="pomo">
+                  <Link to="/pomodoro">Pomodoro</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/ariel-wilkins-saintil-a79207286/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+              <a
+                href="https://github.com/WilkinsGBE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+              <a
+                href="https://www.instagram.com/wilkinss.1/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

@@ -1,9 +1,10 @@
 import React from "react";
-import "./homepage.css"
+import "./homepage.css";
 
 export const Homepage = () => {
   return (
     <>
+      <h1>THIS PAGE IS UNDER CONSTRUCTION !!!</h1>
       <div className="homepage">
         <h1>What this page is about</h1>
         <div>
