@@ -58,7 +58,7 @@ const App = () => {
                 <li className="todos">
                   <Link to="/todo">To-Do</Link>
                 </li>
-                <li className="note">
+                <li className="notes">
                   <Link to="/notes">Notes</Link>
                 </li>
                 <li className="pomo">

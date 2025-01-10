@@ -32,28 +32,28 @@
 }
 
 textarea {
-    border: none;
-    resize: none;
-    background-color: #d6c1f7;
+  border: none;
+  resize: none;
+  background-color: #d6c1f7;
 }
 
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 /* this is the button save */
 .save {
-    color: black;
-    background-color: #e1e1e1;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 10px 5px 10px;
-    width: 50px;
+  color: black;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  width: 50px;
 }
 
 .save:hover {
-    background-color: #ffff88;
-    cursor: pointer;
+  background-color: #ffff88;
+  cursor: pointer;
 }
 
 .note-footer {
@@ -63,70 +63,70 @@ textarea:focus {
 }
 
 .delete-icon {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .delete-icon:hover {
-    font-size: 36px; 
-    animation: shake 0.7s ease-in-out infinite; /* Shaking animation */
-  }
+  font-size: 36px;
+  animation: shake 0.7s ease-in-out infinite; /* Shaking animation */
+}
 
-  @keyframes shake {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(-5px);
-    }
-    50% {
-      transform: translateX(5px);
-    }
-    75% {
-      transform: translateX(-5px);
-    }
-    100% {
-      transform: translateX(5px);
-    }
+@keyframes shake {
+  0% {
+    transform: translateX(0);
   }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
 
-  .search {
-    display: flex;
-    align-items: center;
-    background-color: rgba(233, 233, 233);
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 1.5em;
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgba(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
 }
 
 .search input {
-    background-color: rgba(233, 233, 233);
-    border: none;
+  background-color: rgba(233, 233, 233);
+  border: none;
 }
 
 /* when the user clicks on it, or is mouse is focus on it */
 .search input:focus {
-    outline: none;
+  outline: none;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header h1 {
-    color: black;
+  color: black;
 }
 
 .toggle {
-    color: black;
-    background-color: #e1e1e1;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 10px 5px 10px;
-    width: 50px;
-    cursor: pointer;
+  color: black;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  width: 6rem;
 }
 
 .light-mode {
@@ -138,9 +138,9 @@ textarea:focus {
 }
 
 .dark-mode {
-    background-color: black;
+  background-color: black;
 }
 
 .dark-mode h1 {
-    color: white;
+  color: white;
 }

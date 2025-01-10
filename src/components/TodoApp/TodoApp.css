@@ -63,15 +63,15 @@ nav ul li.home:hover a {
 }
 
 nav ul li.todos:hover a {
-  color: rgba(1, 135, 51, 1);
+  color: rgb(196, 242, 213);
 }
 
 nav ul li.pomo:hover a {
   color: rgba(255, 0, 0, 1);
 }
 
-nav ul li.note:hover a {
-  color: rgba(43, 70, 237, 1);
+nav ul li.notes:hover a {
+  color: #ffff88;
 }
 
 .box {
