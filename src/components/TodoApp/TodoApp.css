@@ -25,6 +25,9 @@ body {
   align-items: center;
 }
 
+.header img {
+  width: 36px;
+}
 /* Navigation bar properties */
 
 nav {
@@ -265,7 +268,7 @@ input::placeholder {
 
 /* -------- Media Queries ------- */
 /* Tablet Screen */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .box {
     width: 80%;
     max-width: 600px; /* Adjust for tablet screens */
