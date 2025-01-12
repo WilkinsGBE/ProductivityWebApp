@@ -150,4 +150,9 @@ button {
     width: 90%;
     justify-self: center;
   }
+
+  .settings-page {
+    width: 80%;
+    justify-self: center
+  }
 }

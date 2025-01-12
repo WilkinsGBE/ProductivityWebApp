@@ -31,6 +31,7 @@ export const Header = () => {
 
   return (
     <div className="Main-header">
+      <img className="icon" src="./src/assets/Productivity Web App icon.png" alt="" />
       <h1>Productivity Web App</h1>
 
       {/* Mobile Menu - Only show if screen width < 768px */}
@@ -51,7 +52,7 @@ export const Header = () => {
             size="2x"
             onClick={closeMenu}
             className="close-menu-icon"
-            style={{ color: '#ff5733' }}
+            style={{ color: "#ff5733" }}
           />
 
           <ul>
@@ -74,21 +75,33 @@ export const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="3x" style={{ marginRight: '5px' }}/>
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="3x"
+                style={{ marginRight: "5px" }}
+              />
             </a>
             <a
               href="https://github.com/WilkinsGBE"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} size="3x" style={{ margin: '5px' }}/>
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="3x"
+                style={{ margin: "5px" }}
+              />
             </a>
             <a
               href="https://www.instagram.com/wilkinss.1/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faInstagram} size="3x" style={{ margin: '5px' }}/>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="3x"
+                style={{ margin: "5px" }}
+              />
             </a>
           </div>
         </div>

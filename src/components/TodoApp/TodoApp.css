@@ -105,9 +105,9 @@ nav ul li.notes:hover a {
   border-radius: 100px;
   background: linear-gradient(
     45deg,
-    rgba(2, 0, 36, 1) 0%,
+    rgba(43, 70, 237, 1) 0%,
     rgba(1, 135, 51, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(128, 0, 0, 1) 100%
   );
   background-blend-mode: multiply;
 }
@@ -126,6 +126,14 @@ nav ul li.notes:hover a {
   flex-direction: row;
   justify-content: space-around;
   padding: 2px;
+  align-items: center;
+}
+
+.Main-header img.icon{
+  width: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: -400px;
 }
 
 .Main-header h1 {
@@ -398,8 +406,6 @@ input::placeholder {
     font-size: 20px; /* Adjust font size as needed */
   }
 
-  .nav {
-  }
   .menu-container {
     position: fixed;
     top: 0;
@@ -505,6 +511,17 @@ input::placeholder {
   .social-icons a {
     color: blue;
     gap: 50px;
+  }
+
+  .Main-header img.icon{
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .Main-header h1 {
+    font-size: 20px;
   }
 }
 
