@@ -51,6 +51,7 @@ export const Header = () => {
             size="2x"
             onClick={closeMenu}
             className="close-menu-icon"
+            style={{ color: '#ff5733' }}
           />
 
           <ul>
@@ -73,21 +74,21 @@ export const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faLinkedin} size="3x" style={{ marginRight: '5px' }}/>
             </a>
             <a
               href="https://github.com/WilkinsGBE"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" />
+              <FontAwesomeIcon icon={faGithub} size="3x" style={{ margin: '5px' }}/>
             </a>
             <a
               href="https://www.instagram.com/wilkinss.1/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
+              <FontAwesomeIcon icon={faInstagram} size="3x" style={{ margin: '5px' }}/>
             </a>
           </div>
         </div>

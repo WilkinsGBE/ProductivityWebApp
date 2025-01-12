@@ -146,7 +146,8 @@ button {
 
 /* Media Queries for Mobile devices */
 @media (max-width: 480px) {
-  .main {
-    
+  .progressbar {
+    width: 90%;
+    justify-self: center;
   }
 }
