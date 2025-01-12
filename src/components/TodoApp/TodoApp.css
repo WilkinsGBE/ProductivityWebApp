@@ -82,10 +82,34 @@ nav ul li.notes:hover a {
   flex-direction: column;
   align-items: center;
   min-height: 550px;
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
   border-radius: 20px;
   margin-top: 100px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.box::-webkit-scrollbar {
+  width: 20px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  background: rgba(100, 100, 100, 0.7);
+}
+
+/* Scrollbar thumb (the draggable part) */
+.box::-webkit-scrollbar-thumb {
+  width: 16.129px;
+  height: 113.372px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-blend-mode: multiply;
 }
 
 /* -------- Title ------- */
@@ -119,7 +143,6 @@ nav ul li.notes:hover a {
   display: flex;
   flex-direction: row;
   padding-right: 10px;
-
 }
 
 .pages-nav-links ul {
@@ -206,9 +229,10 @@ nav ul li.notes:hover a {
   color: white;
   font-weight: bold;
   height: 40px;
-  width: 100px;
+  width: 80px;
   padding: 0 16px;
   cursor: pointer;
+  justify-content: center;
 }
 
 .input button:hover {
@@ -233,7 +257,7 @@ input::placeholder {
 .todolist {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .list {
@@ -337,6 +361,7 @@ input::placeholder {
   .box {
     width: 80%;
     padding: 18px;
+    overflow-x: hidden;
   }
 
   .header img {
