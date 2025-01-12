@@ -12,8 +12,9 @@ const App = () => {
       <Header /> {/* Always visible header with navigation links */}
       <div className="content">
         <Routes>
+          <Route path="/" element={<Todo />} />
           <Route path="/todo" element={<Todo />} />
-          <Route path="/" element={<Homepage />} />
+          <Route path="/homepage" element={<Homepage />} />
           <Route path="/notes" element={<NotesApp />} />
           <Route path="/pomodoro" element={<Pomodoro />} />
         </Routes>

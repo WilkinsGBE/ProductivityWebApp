@@ -370,6 +370,7 @@ input::placeholder {
     width: 80%;
     padding: 18px;
     overflow-x: hidden;
+    max-height: 2500px;
   }
 
   .header img {

@@ -57,7 +57,7 @@ export const Header = () => {
 
           <ul>
             <li className="home">
-              <Link to="/">Homepage</Link>
+              <Link to="/homepage">Homepage</Link>
             </li>
             <li className="todos">
               <Link to="/todo">To-Do</Link>
@@ -114,7 +114,7 @@ export const Header = () => {
             <div className="pages-nav-links">
               <ul>
                 <li className="home">
-                  <Link to="/">Homepage</Link>
+                  <Link to="/homepage">Homepage</Link>
                 </li>
                 <li className="todos">
                   <Link to="/todo">To-Do</Link>
