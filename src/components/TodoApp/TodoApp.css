@@ -1,0 +1,587 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.todo {
+  background-color: rgb(2, 0, 36, 0.5);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  width: 36px;
+}
+/* Navigation bar properties */
+
+nav {
+  display: flex;
+  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 70, 237, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(128, 0, 0, 1) 100%
+  );
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li.home:hover a {
+  color: rgba(43, 70, 237, 1);
+}
+
+nav ul li.todos:hover a {
+  color: rgb(196, 242, 213);
+}
+
+nav ul li.pomo:hover a {
+  color: rgba(255, 0, 0, 1);
+}
+
+nav ul li.notes:hover a {
+  color: #ffff88;
+}
+
+.box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 550px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 100px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.box::-webkit-scrollbar {
+  width: 20px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  background: rgba(100, 100, 100, 0.7);
+}
+
+/* Scrollbar thumb (the draggable part) */
+.box::-webkit-scrollbar-thumb {
+  width: 16.129px;
+  height: 113.372px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: linear-gradient(
+    45deg,
+    rgba(43, 70, 237, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(128, 0, 0, 1) 100%
+  );
+  background-blend-mode: multiply;
+}
+
+/* -------- Title ------- */
+
+.Main-header {
+  display: flex;
+  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 70, 237, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(128, 0, 0, 1) 100%
+  );
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2px;
+  align-items: center;
+}
+
+.Main-header img.icon{
+  width: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: -400px;
+}
+
+.Main-header h1 {
+  margin-left: -20px;
+  font-size: 30px;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+.pages-nav-links {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+
+.pages-nav-links ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 25px;
+  text-decoration: none;
+  gap: 13px;
+  margin-left: -70px;
+}
+
+.pages-nav-links ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 650;
+}
+
+.pages-nav-links .home a:hover {
+  color: rgba(43, 70, 237, 1);
+}
+
+.pages-nav-links .todos a:hover {
+  color: rgb(196, 242, 213);
+}
+
+.pages-nav-links .notes a:hover {
+  color: #ffff88;
+}
+
+.pages-nav-links .pomo a:hover {
+  color: rgba(255, 0, 0, 1);
+}
+
+.social-icons {
+  padding-left: 15px;
+}
+
+.social-icons a {
+  color: black;
+  gap: 100px;
+  margin-right: 10px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0px;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+/* ------ Input box ------ */
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  background-color: #e5e7eb;
+  padding: 0 8px;
+  border-radius: 50px;
+  width: 75%;
+  max-width: 500px;
+}
+
+.input input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  flex: 1;
+  height: 2rem;
+  padding-left: 16px;
+  padding-right: 8px;
+  font-size: 1rem;
+}
+
+.input button {
+  background-color: rgba(0, 128, 0, 0.7);
+  border: 0;
+  outline: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  width: 80px;
+  padding: 0 16px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.input button:hover {
+  background-color: green;
+}
+
+input::placeholder {
+  color: rgb(148, 163, 184);
+}
+
+/* TodoItems code is below this */
+.todo-items {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-self: flex-start;
+  padding: 25px 0px 25px 25px;
+  gap: 5px;
+}
+
+/* the divs in TodoItems.jsx */
+.todolist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list img {
+  width: 24px;
+  height: auto;
+}
+
+.list p {
+  margin-left: 1rem;
+  font-size: 17px;
+  color: #3f3f46;
+}
+
+.list p.line-through {
+  text-decoration: line-through;
+  text-decoration-thickness: 15px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  width: 14px;
+}
+
+/* TodoItems code is over this */
+
+/* -------- Media Queries ------- */
+/* Tablet Screen */
+@media (min-width: 768px) {
+  .box {
+    width: 80%;
+    max-width: 600px; /* Adjust for tablet screens */
+  }
+
+  .header icon {
+    width: 32px; /* Reduce icon size */
+  }
+
+  .header h1 {
+    font-size: 1.8rem; /* Adjust title font size */
+  }
+
+  .input {
+    width: 90%; /* Wider input for tablets */
+    max-width: 400px; /* Ensure it doesn't stretch too much */
+    padding: 0 6px;
+  }
+
+  .todo-items {
+    width: 95%; /* Wider content for tablets */
+    padding: 20px 10px;
+  }
+
+  .list p {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+
+  .delete-icon {
+    width: 12px; /* Reduce delete icon size */
+  }
+
+  .open-menu-icon {
+    display: block;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-container.open {
+    display: block;
+  }
+
+  .close-menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: block;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 480px) {
+  .box {
+    width: 80%;
+    padding: 18px;
+    overflow-x: hidden;
+    max-height: 2500px;
+  }
+
+  .header img {
+    width: 28px; /* Reduce icon size for mobile */
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Smaller title font size */
+  }
+
+  .input {
+    width: 100%; /* Full width for inputs */
+    max-width: 300px;
+    padding: 0 4px;
+  }
+
+  .todo-items {
+    width: 100%;
+    gap: 10px; /* Adjust gap for smaller screens */
+    padding: 15px 10px;
+  }
+
+  .list p {
+    font-size: 0.9rem; /* Smaller font size */
+    margin-right: 25px;
+  }
+
+  .delete-icon {
+    width: 12px; /* Smaller delete icon */
+    padding-right: 10px;
+  }
+
+  .title {
+    font-size: 20px; /* Adjust font size as needed */
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    transition: right 0.3s ease-in-out;
+    padding: 15px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .menu-container.open {
+    right: 0;
+  }
+
+  .open-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-menu-icon {
+    color: black;
+  }
+
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .open {
+    background-color: black;
+  }
+
+  .Main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(
+      90deg,
+      rgba(43, 70, 237, 1) 0%,
+      rgba(1, 135, 51, 1) 50%,
+      rgba(128, 0, 0, 1) 100%
+    );
+  }
+
+  .Main-header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .Main-header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .Main-header ul li a {
+    font-size: 1.5rem;
+  }
+
+  .Main-header ul li.home a {
+    color: rgba(43, 70, 237, 1);
+  }
+
+  .Main-header .todos a {
+    color: rgb(196, 242, 213);
+  }
+
+  .Main-header .notes a {
+    color: #ffff88;
+  }
+
+  .Main-header .pomo a {
+    color: rgba(255, 0, 0, 1);
+  }
+
+  .social-icons {
+    margin-left: 45px;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    color: blue;
+    gap: 50px;
+  }
+
+  .Main-header img.icon{
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .Main-header h1 {
+    font-size: 20px;
+  }
+}
+
+/* Large Screen (e.g., desktops wider than 1200px) */
+@media (min-width: 1200px) {
+  .box {
+    width: 70%;
+    max-width: 800px; /* Allow more content on wider screens */
+  }
+
+  .input {
+    max-width: 500px;
+  }
+
+  .todo-items {
+    gap: 15px; /* Add more gap on larger screens */
+  }
+
+  .list p {
+    font-size: 1.1rem; /* Slightly larger font size */
+  }
+
+  .delete-icon {
+    width: 16px;
+  }
+}
+
+/* Menu for Mobile */
+.menu-container {
+  display: none; /* Hidden by default */
+}
+
+.open-menu-icon {
+  display: none; /* Hidden by default */
+}
+
+/* Display the menu icon and container for screens smaller than 768px */
+@media (max-width: 768px) {
+  .open-menu-icon {
+    display: block; /* Show menu icon */
+  }
+
+  .menu-container {
+    display: block; /* Show menu */
+  }
+
+  .desktop-nav-links {
+    display: none; /* Hide desktop links */
+  }
+}
+
+/* For tablet and larger screen sizes, show the desktop links */
+@media (min-width: 768px) {
+  .desktop-nav-links {
+    display: block; /* Show desktop navigation links */
+  }
+
+  .menu-container,
+  .open-menu-icon {
+    display: none; /* Hide menu on tablets/PC */
+  }
+}
