@@ -10,6 +10,7 @@ export const NotesList = ({ notes, handleAddNote, handleDeleteNote }) => {
         {/* Displaying all the notes dynamically (based on the number of notes) */}
         {notes.map((note) => (
           <Note
+            key={note.id} // Added key prop
             id={note.id}
             text={note.text}
             date={note.date}

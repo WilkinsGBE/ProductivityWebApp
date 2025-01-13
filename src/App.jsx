@@ -8,7 +8,7 @@ import { Pomodoro } from "./components/PomodoroApp/Pomodoro";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ProductivityWebApp">
       <Header /> {/* Always visible header with navigation links */}
       <div className="content">
         <Routes>
