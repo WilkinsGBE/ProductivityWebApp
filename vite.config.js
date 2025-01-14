@@ -10,14 +10,4 @@ export default defineConfig({
     include: /src\/.*\.(js|jsx)$/, // Apply only to files in the src folder
     exclude: /node_modules/, // Properly exclude node_modules folder
   },
-  server: {
-    open: true, // Automatically open the app in the browser
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: "./index.html", // Main entry point
-      },
-    },
-  },
 });

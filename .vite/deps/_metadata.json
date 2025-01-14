@@ -1,0 +1,70 @@
+{
+  "hash": "b6882c8a",
+  "configHash": "8b439a71",
+  "lockfileHash": "a6105332",
+  "browserHash": "708ab219",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "e8be57a5",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b8decd05",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "6f665d6d",
+      "needsInterop": false
+    },
+    "@fortawesome/react-fontawesome": {
+      "src": "../../node_modules/@fortawesome/react-fontawesome/index.es.js",
+      "file": "@fortawesome_react-fontawesome.js",
+      "fileHash": "0008698b",
+      "needsInterop": false
+    },
+    "@fortawesome/free-brands-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-brands-svg-icons/index.mjs",
+      "file": "@fortawesome_free-brands-svg-icons.js",
+      "fileHash": "fcb57c88",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "c0738e13",
+      "needsInterop": false
+    },
+    "react-slider": {
+      "src": "../../node_modules/react-slider/dist/es/dev/index.mjs",
+      "file": "react-slider.js",
+      "fileHash": "8481c9ba",
+      "needsInterop": false
+    },
+    "react-circular-progressbar": {
+      "src": "../../node_modules/react-circular-progressbar/dist/index.esm.js",
+      "file": "react-circular-progressbar.js",
+      "fileHash": "57fbeda3",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-IPYILTUR": {
+      "file": "chunk-IPYILTUR.js"
+    },
+    "chunk-JQEZBOMU": {
+      "file": "chunk-JQEZBOMU.js"
+    },
+    "chunk-4SFRHSJ3": {
+      "file": "chunk-4SFRHSJ3.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}
