@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ProductivityWebApp/', // Ensure correct base path for GitHub Pages deployment
+  base: "/ProductivityWebApp", // Ensure correct base path for GitHub Pages deployment
   esbuild: {
-    loader: 'jsx', // Use JSX loader for JavaScript files
+    loader: "jsx", // Use JSX loader for JavaScript files
     include: /src\/.*\.(js|jsx)$/, // Apply only to files in the src folder
     exclude: /node_modules/, // Properly exclude node_modules folder
   },
@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: './index.html', // Main entry point
+        main: "./index.html", // Main entry point
       },
     },
   },
