@@ -6,12 +6,6 @@
     rgba(128, 0, 0, 1) 50%,
     #000000 100%
   );
-  /* background: linear-gradient(
-    45deg,
-    rgba(255, 165, 0, 1) 0%,   
-    rgba(255, 140, 0, 1) 50%,   
-    rgba(0, 0, 0, 1) 100% 
- */
   color: white;
   height: 100vh;
 }
@@ -155,4 +149,8 @@ button {
     width: 80%;
     justify-self: center
   }
+    .play-button {
+      display: block; 
+    }  
+
 }
