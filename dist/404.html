@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <h1>Redirecting...</h1>
-  <p>If you're not redirected automatically, <a id="redirect-link" href="/">click here</a>.</p>
-
-  <script>
-    // Get the current path and query string
-    const currentPath = window.location.pathname;
-    const currentQuery = window.location.search;
-
-    // Append the path and query string to the app's basename
-    const redirectTo = "/ProductivityWebApp" + currentPath + currentQuery;
-
-    // Set the redirect link href for users without JavaScript
-    document.getElementById("redirect-link").href = redirectTo;
-
-    // Redirect automatically using JavaScript
-    window.location.replace(redirectTo);
-  </script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page App for GitHub Pages</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages (mit license)
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
 </html>

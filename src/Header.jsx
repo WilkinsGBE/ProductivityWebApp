@@ -31,7 +31,12 @@ export const Header = () => {
 
   return (
     <div className="Main-header">
-      <img className="icon" src="./src/assets/Productivity Web App icon.png" alt="" />
+      <img
+        className="icon"
+        src="/Productivity-Web-App-icon.png"
+        alt="App icon"
+      />
+
       <h1>Productivity Web App</h1>
 
       {/* Mobile Menu - Only show if screen width < 768px */}
