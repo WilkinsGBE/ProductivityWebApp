@@ -3,7 +3,7 @@ import "./PomodoroApp.css";
 
 export const PlayButton = (props) => {
   return (
-    <div className="play-button">
+    <div className={props.className}>
       <button onClick={props.onClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,7 @@ export const PlayButton = (props) => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"  // Changed from class to className
+
         >
           <path
             strokeLinecap="round"  // Changed to camelCase

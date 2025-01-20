@@ -2,54 +2,54 @@
   "hash": "b6882c8a",
   "configHash": "8b439a71",
   "lockfileHash": "a6105332",
-  "browserHash": "708ab219",
+  "browserHash": "0b9181c6",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "e8be57a5",
+      "fileHash": "7ac994eb",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "b8decd05",
+      "fileHash": "720e28f6",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "6f665d6d",
+      "fileHash": "ddd86c3e",
       "needsInterop": false
     },
     "@fortawesome/react-fontawesome": {
       "src": "../../node_modules/@fortawesome/react-fontawesome/index.es.js",
       "file": "@fortawesome_react-fontawesome.js",
-      "fileHash": "0008698b",
+      "fileHash": "befad0ef",
       "needsInterop": false
     },
     "@fortawesome/free-brands-svg-icons": {
       "src": "../../node_modules/@fortawesome/free-brands-svg-icons/index.mjs",
       "file": "@fortawesome_free-brands-svg-icons.js",
-      "fileHash": "fcb57c88",
+      "fileHash": "8c286abb",
       "needsInterop": false
     },
     "@fortawesome/free-solid-svg-icons": {
       "src": "../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
       "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "c0738e13",
-      "needsInterop": false
-    },
-    "react-slider": {
-      "src": "../../node_modules/react-slider/dist/es/dev/index.mjs",
-      "file": "react-slider.js",
-      "fileHash": "8481c9ba",
+      "fileHash": "b3f370e1",
       "needsInterop": false
     },
     "react-circular-progressbar": {
       "src": "../../node_modules/react-circular-progressbar/dist/index.esm.js",
       "file": "react-circular-progressbar.js",
-      "fileHash": "57fbeda3",
+      "fileHash": "b9ac3cb4",
+      "needsInterop": false
+    },
+    "react-slider": {
+      "src": "../../node_modules/react-slider/dist/es/dev/index.mjs",
+      "file": "react-slider.js",
+      "fileHash": "a739f921",
       "needsInterop": false
     }
   },
