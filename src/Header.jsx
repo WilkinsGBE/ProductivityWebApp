@@ -33,7 +33,7 @@ export const Header = () => {
     <div className="Main-header">
       <img
         className="icon"
-        src="/Productivity-Web-App-icon.png"
+        src="/ProductivityWebApp/public/Productivity-Web-App-icon.png"
         alt="App icon"
       />
 
