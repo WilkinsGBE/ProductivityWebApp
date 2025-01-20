@@ -10,7 +10,7 @@ import { SettingsContext } from "./SettingsContext";
 const red = "#f54e4e";
 const green = "#4aec8c";
 
-export const Timer = () => {
+export const Timer = (props) => {
   // This will be use to switch to true the settings Page when it is clicked
   const settingsInfo = useContext(SettingsContext);
 
@@ -71,7 +71,7 @@ export const Timer = () => {
 
   return (
     <div>
-      <div className="progressbar">
+      <div className={props.className}>
         {/* circular bar from https://www.npmjs.com/package/react-circular-progressbar */}
         <CircularProgressbar
           value={percentage}
@@ -87,8 +87,8 @@ export const Timer = () => {
       </div>
       <div className="play-pause">
         {isPaused ? (
-          <PlayButton
-            className="play-button"
+          <PauseButton
+            className="pause-button"
             onClick={() => {
               setIsPaused(false);
               isPausedRef.current = false;

@@ -40,6 +40,7 @@ button {
 .play-button,
 .pause-button {
   width: 25%;
+  visibility: visible;
 }
 
 /* the second container with the button */

@@ -600,4 +600,16 @@ input::placeholder {
   .open-menu-icon {
     display: none; /* Hide menu on tablets/PC */
   }
+
+  .pages-nav-links ul a {
+    font-size: 25px;
+  }
+
+  .Main-header h1 {
+    font-size: 30px;
+  }  
+
+  .icon {
+    margin-left: 0px;
+  }
 }

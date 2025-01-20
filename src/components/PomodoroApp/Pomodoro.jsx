@@ -24,7 +24,7 @@ export const Pomodoro = () => {
           }}
         >
           {/* If true the Settings get showed, otherwise, show Timer */}
-          {showSettings ? <Settings /> : <Timer />}
+          {showSettings ? <Settings className="settings-page"/> : <Timer className="progressbar"/>}
         </SettingsContext.Provider>
       </main>
     </div>

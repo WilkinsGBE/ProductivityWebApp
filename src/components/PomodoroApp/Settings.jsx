@@ -4,11 +4,11 @@ import ReactSlider from "react-slider";
 import { SettingsContext } from "./SettingsContext";
 import { BackButton } from "./BackButton";
 
-export const Settings = () => {
+export const Settings = (props) => {
   const settingsInfo = useContext(SettingsContext);
   return (
     <>
-      <div className="settings-page">
+      <div className={props.className}>
         <label>Work Minutes: {settingsInfo.workMinutes}:00 </label>
         <ReactSlider
           className="slider red"
