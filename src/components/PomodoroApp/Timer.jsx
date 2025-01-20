@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { PlayButton } from "./PlayButton";
-import { PauseButton } from "./PauseButton";
+// import { PlayButton } from "./PlayButton";
+import { Play_PauseButton } from "./Play_PauseButton";
 import { SettingsButton } from "./SettingsButton";
 import "./PomodoroApp.css";
 import { SettingsContext } from "./SettingsContext";
@@ -87,7 +87,7 @@ export const Timer = (props) => {
       </div>
       <div className="play-pause">
         {isPaused ? (
-          <PauseButton
+          <Play_PauseButton
             className="pause-button"
             onClick={() => {
               setIsPaused(false);
@@ -95,7 +95,7 @@ export const Timer = (props) => {
             }}
           />
         ) : (
-          <PauseButton
+          <Play_PauseButton
             className="pause-button"
             onClick={() => {
               setIsPaused(true);
