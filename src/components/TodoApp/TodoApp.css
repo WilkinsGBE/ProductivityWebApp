@@ -562,7 +562,7 @@ input::placeholder {
 }
 
 /* Display the menu icon and container for screens smaller than 768px */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .open-menu-icon {
     display: block; /* Show menu icon */
   }
@@ -576,8 +576,22 @@ input::placeholder {
   }
 }
 
-/* For tablet and larger screen sizes, show the desktop links */
 @media (min-width: 768px) {
+  .pages-nav-links ul a {
+    font-size: 20px;
+  }
+
+  .Main-header h1 {
+    font-size: 24px;
+  }  
+
+  .icon {
+    margin-left: -40px;
+  }
+}
+
+/* For tablet and larger screen sizes, show the desktop links */
+@media (min-width: 1150px) {
   .desktop-nav-links {
     display: block; /* Show desktop navigation links */
   }
