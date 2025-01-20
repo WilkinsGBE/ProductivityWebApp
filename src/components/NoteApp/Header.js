@@ -15,7 +15,7 @@ export const Header = ({ handleToggleDarkMode }) => {
     <div className="header">
       <h1>Notes</h1>
       <button onClick={toggleTheme} className="toggle">
-        {toggleMode === "white" ? "Black Mode" : "White Mode"}
+        {toggleMode === "white" ? "Dark Mode" : "Light Mode"}
       </button>
     </div>
   );
