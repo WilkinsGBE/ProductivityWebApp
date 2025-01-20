@@ -520,6 +520,7 @@ input::placeholder {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 10px;
+    padding-right: 0px;
   }
 
   .Main-header h1 {
