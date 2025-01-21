@@ -139,6 +139,26 @@ button {
 
 /* Media Queries for Mobile devices */
 @media (max-width: 767px) {
+  .pomodoro {
+    background-color: rgba(2, 0, 36, 0.5);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(128, 0, 0, 1) 50%,
+      #000000 100%
+    );
+    color: white;
+  }
+
+  main {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+  }
+
   .progressbar {
     width: 85%;
     justify-self: center;
@@ -164,10 +184,17 @@ button {
     position: relative;
     justify-content: center;
     justify-items: center;
-    }
+  }
 
-    button {
-      display: flex;
-      height: 50px;
-    }
+  button {
+    display: flex;
+    height: 50px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
 }
