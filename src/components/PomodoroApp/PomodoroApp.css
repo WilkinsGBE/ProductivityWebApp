@@ -56,9 +56,9 @@ button {
   padding: 10px 20px;
   display: inline-block;
   justify-content: center;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
 }
 
@@ -67,7 +67,7 @@ button {
 }
 
 .settings-button svg {
-  width: 34px; 
+  width: 34px;
   height: 34px;
   padding-right: 8px;
 }
@@ -76,7 +76,6 @@ button {
   font-size: 1.4rem;
   line-height: 36px;
 }
-
 
 /* Settings Page */
 .settings-page {
@@ -90,7 +89,7 @@ button {
   font-size: 20px;
 }
 
-.slider.red{
+.slider.red {
   height: 40px;
   border: 2px solid #f54e4e;
   border-radius: 20px;
@@ -120,8 +119,8 @@ button {
 
 .back-button {
   width: auto;
-  background-color:rgba(255,255,255,0.3);
-  border-radius:10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
   padding: 10px 10px;
   margin-top: 50px;
   font-size: 1.4rem;
@@ -134,7 +133,7 @@ button {
 }
 
 .back-button svg {
-  width: 34px; 
+  width: 34px;
   height: 34px;
   padding-right: 8px;
 }
@@ -142,16 +141,29 @@ button {
 /* Media Queries for Mobile devices */
 @media (max-width: 480px) {
   .progressbar {
-    width: 90%;
+    width: 85%;
     justify-self: center;
+    align-items: center;
   }
 
   .settings-page {
     width: 80%;
-    justify-self: center
+    justify-self: center;
+    align-items: center;
   }
-    .play-button {
-      display: block; 
-    }  
+  .play-button {
+    display: block;
+  }
 
+  .play-pause {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    visibility: visible;
+    z-index: 10;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    }
 }
