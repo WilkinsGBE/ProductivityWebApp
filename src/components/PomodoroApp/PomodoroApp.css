@@ -137,3 +137,53 @@ button {
   height: 34px;
   padding-right: 8px;
 }
+
+/* Media Queries for Mobile devices */
+@media (max-width: 768px) {
+  .pomodoro {
+    background-color: rgba(2, 0, 36, 0.5);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(128, 0, 0, 1) 50%,
+      #000000 100%
+    );
+    color: white;
+    height: 100vh;
+  }
+
+  main {
+    /* max-width: 450px;
+    margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .progressbar {
+    width: 85%;
+    justify-self: center;
+  }
+
+  .settings-page {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .back-button {
+    color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+  }
+
+  .play-pause {
+    z-index: 10;
+    height: max-content;
+  }
+
+  .pause-button {
+    z-index: 10;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+  }
+}
