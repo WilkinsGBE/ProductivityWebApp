@@ -5,7 +5,6 @@ export const SettingsButton = (props) => {
   return (
     // Add the className prop to the div element
     <div className={props.className}>
-      <div>
         {/* Add the onClick prop to the button element because otherwise it wont work*/}
         <button onClick={props.onClick}>
           <svg
@@ -29,7 +28,6 @@ export const SettingsButton = (props) => {
           </svg>
           Settings
         </button>
-      </div>
     </div>
   );
 };
