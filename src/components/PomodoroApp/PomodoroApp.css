@@ -175,30 +175,35 @@ button {
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .settings-page {
-    width: 80%;
-    justify-self: center;
-  }
-
-  .settings {
-    display: flex;
-    z-index: 10;
-    color: white;
-    width: 100%;
-    visibility: visible;
-  }
-
-  .settings-button:hover {
-    background-color: transparent;
-  }
-
-  .settings-button svg {
-    width: 34px;
-    height: 34px;
+  .settings svg {
     color: rgba(255, 255, 255, 0.8);
   }
 
+  /* Settings Page */
   .settings-page {
+    text-align: left;
     justify-content: center;
+    width: 80%;
+  }
+
+  .back-button {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 50px;
+    font-size: 1.4rem;
+    line-height: 36px;
+    justify-self: center;
+  }
+
+  .back-button:hover {
+    background-color: transparent;
+  }
+
+  .back-button svg {
+    width: 34px;
+    height: 34px;
+    padding-right: 8px;
   }
 }
