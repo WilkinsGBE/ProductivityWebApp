@@ -169,12 +169,21 @@ button {
     width: 100px;
     margin-left: auto;
     margin-right: auto;
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+    z-index: 10;
   }
 
   .settings-button svg {
     width: 34px;
     height: 34px;
     padding-right: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+    z-index: 10;
   }
 
   /* Settings Page */
