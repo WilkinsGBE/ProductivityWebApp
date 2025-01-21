@@ -1,4 +1,10 @@
 /* The Nav CSS is in TodoApp.css */
   
-
+main {
+    height: 100vh;
+}
   
+body {
+    margin: 0;
+    padding: 0;
+  }

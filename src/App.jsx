@@ -5,6 +5,7 @@ import { Todo } from "./components/TodoApp/Todo";
 import { Homepage } from "./components/Homepage/Homepage";
 import { NotesApp } from "./components/NoteApp/NotesApp";
 import { Pomodoro } from "./components/PomodoroApp/Pomodoro";
+import "./App.css"
 
 const App = () => {
   return (
