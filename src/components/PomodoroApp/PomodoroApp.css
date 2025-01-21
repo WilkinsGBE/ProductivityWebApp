@@ -44,31 +44,21 @@ button {
 }
 
 /* the second container with the button */
-.settings {
-  margin-top: 20px;
-  display: inline-block;
-  justify-content: center;
-}
-
 .settings-button {
+  width: auto;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  padding: 10px 10px;
+  margin-top: 30px;
+  font-size: 1.6rem;
+  line-height: 36px;
+  justify-self: center;
 }
 
 .settings-button svg {
-  width: 34px;
-  height: 34px;
+  width: 50px;
+  height: 50px;
   padding-right: 8px;
-}
-
-.settings-button span {
-  font-size: 1.4rem;
-  line-height: 36px;
 }
 
 /* Settings Page */
@@ -167,7 +157,9 @@ button {
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .settings svg {
+  .settings-button svg {
+    width: 34px;
+    height: 34px;
     color: rgba(255, 255, 255, 0.8);
   }
 
@@ -179,7 +171,6 @@ button {
   }
 
   .back-button {
-    width: auto;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 10px 10px;

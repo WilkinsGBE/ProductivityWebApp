@@ -29,7 +29,10 @@ export const Settings = (props) => {
           min={1}
           max={30}
         />
-        <BackButton className="back-button" onClick={() => settingsInfo.setShowSettings(false)} />
+        <BackButton
+          className="back-button"
+          onClick={() => settingsInfo.setShowSettings(false)}
+        />
       </div>
     </>
   );

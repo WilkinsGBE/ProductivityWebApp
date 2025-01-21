@@ -104,12 +104,10 @@ export const Timer = (props) => {
           />
         )}
       </div>
-      <div className="settings">
         <SettingsButton
           onClick={() => settingsInfo.setShowSettings(true)}
           className="settings-button"
         />
-      </div>
     </div>
   );
 };
