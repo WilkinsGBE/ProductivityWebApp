@@ -180,4 +180,7 @@ button {
     justify-self: center;
   }
 
+  .back-button:hover, .settings-button:hover{
+    background-color: transparent;
+  }
 }
