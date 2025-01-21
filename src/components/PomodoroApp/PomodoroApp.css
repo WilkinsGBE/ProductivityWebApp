@@ -45,6 +45,7 @@ button {
 
 /* the second container with the button */
 .settings-button {
+  width: auto;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 10px 10px;
@@ -55,8 +56,8 @@ button {
 }
 
 .settings-button svg {
-  width: 50px;
-  height: 50px;
+  width: 34px;
+  height: 34px;
   padding-right: 8px;
 }
 
@@ -158,14 +159,22 @@ button {
   }
 
   .settings-button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 50px;
+    font-size: 1.4rem;
+    line-height: 36px;
+    justify-self: center;
+    width: 100px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .settings-button svg {
-    width: 50px;
-    height: 50px;
-    color: rgba(255, 255, 255, 0.8);    
+    width: 34px;
+    height: 34px;
+    padding-right: 8px;
   }
 
   /* Settings Page */
