@@ -60,10 +60,6 @@ button {
   gap: 100px;
 }
 
-.settings-button:hover {
-  background-color: black;
-}
-
 .settings-button svg {
   width: 34px;
   height: 34px;
@@ -126,10 +122,6 @@ button {
   justify-self: center;
 }
 
-.back-button:hover {
-  background-color: black;
-}
-
 .back-button svg {
   width: 34px;
   height: 34px;
@@ -182,7 +174,7 @@ button {
   /* Settings Page */
   .settings-page {
     text-align: left;
-    justify-content: center;
+    justify-self: center;
     width: 80%;
   }
 
@@ -195,10 +187,6 @@ button {
     font-size: 1.4rem;
     line-height: 36px;
     justify-self: center;
-  }
-
-  .back-button:hover {
-    background-color: transparent;
   }
 
   .back-button svg {
