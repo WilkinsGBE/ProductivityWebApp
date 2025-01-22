@@ -47,7 +47,7 @@ export const Header = () => {
     <div className="Main-header">
       <img
         className="icon"
-        href="/Productivity-Web-App-icon.png"
+        src="/Productivity-Web-App-icon.png"
         alt="App icon"
       />
 
