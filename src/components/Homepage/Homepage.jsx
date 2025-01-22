@@ -34,9 +34,9 @@ export const Homepage = () => {
                 Cross-Browser Compatibility: Accessible on all major browsers.
               </li>
             </ul>
-            <button>
-              <Link to="/todo">To-Do</Link>
-            </button>
+            <Link to="/todo">
+              <button>To-Do</button>
+            </Link>
           </section>
           <section className="noteapp">
             <h2>Note App</h2>
@@ -62,9 +62,9 @@ export const Homepage = () => {
                 note-taking.
               </li>
             </ul>
-            <button>
-              <Link to="/notes">Notes</Link>
-            </button>
+            <Link to="/notes">
+              <button>Notes</button>
+            </Link>
           </section>
           <section className="pomodoroapp">
             <h2>Pomodoro App</h2>
@@ -91,9 +91,9 @@ export const Homepage = () => {
                 setup.
               </li>
             </ul>
-            <button>
-              <Link to="/pomodoro">Pomodoro</Link>
-            </button>
+            <Link to="/pomodoro">
+              <button>Pomodoro</button>
+            </Link>
           </section>
         </div>
       </div>
