@@ -57,7 +57,6 @@ export const Header = () => {
             size="2x"
             onClick={closeMenu}
             className="close-menu-icon"
-            style={{ color: "#ff5733" }}
           />
 
           <ul>
@@ -83,7 +82,6 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="3x"
-                style={{ marginRight: "5px" }}
               />
             </a>
             <a
@@ -94,7 +92,6 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faGithub}
                 size="3x"
-                style={{ margin: "5px" }}
               />
             </a>
             <a
@@ -105,7 +102,6 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="3x"
-                style={{ margin: "5px" }}
               />
             </a>
           </div>

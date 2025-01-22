@@ -1,10 +1,325 @@
 /* The Nav CSS is in TodoApp.css */
-  
+
 main {
-    height: 100vh;
+  height: 100vh;
 }
-  
+
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.Main-header {
+  display: flex;
+  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 70, 237, 1) 0%,
+    rgba(1, 135, 51, 1) 50%,
+    rgba(128, 0, 0, 1) 100%
+  );
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2px;
+  align-items: center;
+}
+
+.Main-header img.icon {
+  width: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: -400px;
+  padding-right: 300px;
+}
+
+.Main-header h1 {
+  margin-left: -20px;
+  font-size: 30px;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+.pages-nav-links {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+
+.pages-nav-links ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 25px;
+  text-decoration: none;
+  gap: 13px;
+  margin-left: -70px;
+}
+
+.pages-nav-links ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 650;
+}
+
+.pages-nav-links .home a:hover {
+  color: rgba(43, 70, 237, 1);
+}
+
+.pages-nav-links .todos a:hover {
+  color: rgb(196, 242, 213);
+}
+
+.pages-nav-links .notes a:hover {
+  color: #ffff88;
+}
+
+.pages-nav-links .pomo a:hover {
+  color: rgba(255, 0, 0, 1);
+}
+
+.social-icons {
+  padding-left: 15px;
+}
+
+.social-icons a {
+  color: black;
+  gap: 100px;
+  margin-right: 10px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0px;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .open-menu-icon {
+    display: block;
   }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-container.open {
+    display: block;
+  }
+
+  .close-menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    position: absolute; /* Positioned relative to the parent */
+    top: 0;
+    right: -370px; /* Start hidden off the right side */
+    width: 370px;
+    height: 100%;
+    padding: 15px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #333; /* Optional: Add a background for visibility */
+    transition: right 120s cubic-bezier(0.25, 0.8, 0.25, 1); /* Longer and smoother easing */
+  }
+
+  .menu-container.open {
+    right: 0; /* Fully visible */
+  }
+
+  .menu-container ul {
+    display: flex;
+    margin-top: 50px;
+    margin-right: -10px;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-container ul li {
+    margin: 10px;
+  }
+
+  .menu-container ul li a {
+    font-size: 30px;
+  }
+
+  .open-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-menu-icon {
+    color: white;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .open {
+    background-color: black;
+  }
+
+  .Main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(
+      90deg,
+      rgba(43, 70, 237, 1) 0%,
+      rgba(1, 135, 51, 1) 50%,
+      rgba(128, 0, 0, 1) 100%
+    );
+  }
+
+  .Main-header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .Main-header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .Main-header ul li a {
+    font-size: 1.8rem;
+  }
+
+  .Main-header ul li.home a {
+    color: rgba(43, 70, 237, 1);
+  }
+
+  .Main-header .todos a {
+    color: rgb(196, 242, 213);
+  }
+
+  .Main-header .notes a {
+    color: #ffff88;
+  }
+
+  .Main-header .pomo a {
+    color: rgba(255, 0, 0, 1);
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding-left: 0px;
+  }
+
+  .Main-header img.icon {
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding-right: 0px;
+  }
+
+  .Main-header h1 {
+    font-size: 20px;
+  }
+}
+
+/* Display the menu icon and container for screens smaller than 768px */
+@media (max-width: 767px) {
+  .open-menu-icon {
+    display: block; /* Show menu icon */
+  }
+
+  .menu-container {
+    display: block; /* Show menu */
+  }
+
+  .desktop-nav-links {
+    display: none; /* Hide desktop links */
+  }
+}
+
+@media (min-width: 768px) {
+  .pages-nav-links ul a {
+    font-size: 20px;
+  }
+
+  .Main-header h1 {
+    font-size: 24px;
+  }
+
+  .icon {
+    margin-left: -40px;
+  }
+}
+
+/* For tablet and larger screen sizes, show the desktop links */
+@media (min-width: 1150px) {
+  .desktop-nav-links {
+    display: block; /* Show desktop navigation links */
+  }
+
+  .menu-container,
+  .open-menu-icon {
+    display: none; /* Hide menu on tablets/PC */
+  }
+
+  .pages-nav-links ul a {
+    font-size: 25px;
+  }
+
+  .Main-header h1 {
+    font-size: 30px;
+  }
+
+  .icon {
+    margin-left: 0px;
+  }
+}
