@@ -40,7 +40,7 @@ export const SettingsButton = (props) => {
         style={{
             width: "45px",
             height: "45px",
-            paddingRight: "8px",
+            padding: "10px",
             color: "rgba(255, 255, 255, 0.8)",
             zIndex: 10,
         }}
