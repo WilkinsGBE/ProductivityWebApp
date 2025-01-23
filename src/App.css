@@ -1,5 +1,3 @@
-/* The Nav CSS is in TodoApp.css */
-
 main {
   height: 100vh;
 }
@@ -146,10 +144,12 @@ body {
     justify-content: flex-start;
     background-color: #333; /* Optional: Add a background for visibility */
     transition: right 120s cubic-bezier(0.25, 0.8, 0.25, 1); /* Longer and smoother easing */
+    
   }
 
   .menu-container.open {
     right: 0; /* Fully visible */
+    padding-bottom: 1800px;
   }
 
   .menu-container ul {
