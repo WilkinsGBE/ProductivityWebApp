@@ -6,7 +6,6 @@
     rgba(43, 70, 237, 1) 40%,       /* #2b46ed (lighter blue) */
     rgba(19, 32, 56, 1) 100%        /* Darker blue end color */
   );
-  height: 100vh;
 }
 
 .text-container {
@@ -143,5 +142,17 @@ section li {
   section li {
     font-size: 1rem;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 1257px) {
+  .homepage {
+
+  }
+}
+
+@media (min-width: 1258px) {
+  .homepage {
+    height: 100vh;
   }
 }
