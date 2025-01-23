@@ -2,9 +2,9 @@
   background-color: rgba(2, 0, 36, 0.5);
   background: linear-gradient(
     45deg,
-    rgba(243, 129, 129, 1) 0%,    /* #f38181 */
-    rgba(128, 0, 0, 1) 50%,        /* Middle color */
-    rgba(40, 40, 50, 1) 100%       /* Softer dark end color */
+    rgba(243, 129, 129, 1) 0%,
+    /* #f38181 */ rgba(128, 0, 0, 1) 50%,
+    /* Middle color */ rgba(40, 40, 50, 1) 100% /* Softer dark end color */
   );
   color: white;
   height: 100vh;
@@ -124,9 +124,9 @@ button {
     background-color: rgba(2, 0, 36, 0.5);
     background: linear-gradient(
       45deg,
-      rgba(243, 129, 129, 1) 0%,    /* #f38181 */
-      rgba(128, 0, 0, 1) 50%,        /* Middle color */
-      rgba(40, 40, 50, 1) 100%       /* Softer dark end color */
+      rgba(243, 129, 129, 1) 0%,
+      /* #f38181 */ rgba(128, 0, 0, 1) 50%,
+      /* Middle color */ rgba(40, 40, 50, 1) 100% /* Softer dark end color */
     );
     color: white;
     min-height: 100vh;
@@ -169,10 +169,12 @@ button {
     width: 100px;
     margin-left: auto;
     margin-right: auto;
-    visibility: visible;
     display: flex;
-    opacity: 1;
     z-index: 10;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-width: 34px;
+    min-height: 50px;
   }
 
   .settings-button svg {
@@ -180,9 +182,10 @@ button {
     height: 34px;
     padding-right: 8px;
     color: rgba(255, 255, 255, 0.8);
-    visibility: visible;
+    stroke: rgba(255, 255, 255, 0.8);
     display: flex;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
     z-index: 10;
   }
 
@@ -192,7 +195,7 @@ button {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-  } 
+  }
 
   .back-button {
     background-color: rgba(255, 255, 255, 0.3);
@@ -224,10 +227,12 @@ button {
     width: 140px;
     margin-left: auto;
     margin-right: auto;
-    visibility: visible;
     display: flex;
-    opacity: 1;
     z-index: 10;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-width: 100px;
+    min-height: 50px;
   }
 
   .settings-button svg {
@@ -235,9 +240,9 @@ button {
     height: 50px;
     padding-right: 8px;
     color: rgba(255, 255, 255, 0.8);
-    visibility: visible;
     display: flex;
-    opacity: 1;
     z-index: 10;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
