@@ -124,9 +124,9 @@ button {
     background-color: rgba(2, 0, 36, 0.5);
     background: linear-gradient(
       45deg,
-      rgba(255, 0, 0, 1) 0%,
-      rgba(128, 0, 0, 1) 50%,
-      #000000 100%
+      rgba(243, 129, 129, 1) 0%,    /* #f38181 */
+      rgba(128, 0, 0, 1) 50%,        /* Middle color */
+      rgba(40, 40, 50, 1) 100%       /* Softer dark end color */
     );
     color: white;
     min-height: 100vh;

@@ -2,11 +2,11 @@
   background: rgb(2, 0, 36);
   background: linear-gradient(
     45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(43, 70, 237, 1) 0%,
-    rgba(3, 3, 3, 1) 100%
+    rgba(2, 0, 36, 1) 0%,           /* Dark start color */
+    rgba(43, 70, 237, 1) 40%,       /* #2b46ed (lighter blue) */
+    rgba(19, 32, 56, 1) 100%        /* Darker blue end color */
   );
-  height: 100vh;
+  
 }
 
 .text-container {
@@ -62,22 +62,25 @@ section button {
 }
 
 section.todoapp button {
-  background-color: rgba(1, 135, 51, 1);
+  background-color: #95e1d3;
 }
 
 section.noteapp button {
-  background-color: #999933;
+  background-color: #fce38a;
 }
 
 section.pomodoroapp button {
-  background-color: rgba(128, 0, 0, 1);
+  background-color: #f38181;
 }
 
-section a  {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
+section button  {
+  color: black;
+  font-size: 1.2rem;
   font-weight: 600;
+}
+
+section a {
+  text-decoration: none;
 }
 
 section p {
@@ -96,11 +99,6 @@ section li {
 
 /* Mobile-Specific Styles (for phones) */
 @media screen and (max-width: 768px) {
-  /* Adjust homepage height for mobile */
-  .homepage {
-    height: auto;
-  }
-
   /* Make text size smaller */
   .headline {
     font-size: 2.5rem;

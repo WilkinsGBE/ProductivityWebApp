@@ -7,14 +7,19 @@ body {
   padding: 0;
 }
 
+.content {
+  height: 100vh;
+}
+
 .Main-header {
   display: flex;
   padding: 10px 20px;
   background: linear-gradient(
     90deg,
-    rgba(43, 70, 237, 1) 0%,
-    rgba(1, 135, 51, 1) 50%,
-    rgba(128, 0, 0, 1) 100%
+    rgba(149, 225, 211, 1) 0%,
+    /* #95e1d3 (pastel blue) */ rgba(252, 227, 138, 1) 50%,
+    /* #fce38a (pastel yellow) */ rgba(243, 129, 129, 1) 100%
+      /* #f38181 (pastel pinkish-red) */
   );
   flex-direction: row;
   justify-content: space-around;
@@ -144,7 +149,6 @@ body {
     justify-content: flex-start;
     background-color: #333; /* Optional: Add a background for visibility */
     transition: right 120s cubic-bezier(0.25, 0.8, 0.25, 1); /* Longer and smoother easing */
-    
   }
 
   .menu-container.open {
@@ -207,9 +211,9 @@ body {
     gap: 30px;
     background: linear-gradient(
       90deg,
-      rgba(43, 70, 237, 1) 0%,
-      rgba(1, 135, 51, 1) 50%,
-      rgba(128, 0, 0, 1) 100%
+      rgba(149, 225, 211, 1) 0%,
+      rgba(252, 227, 138, 1) 50%,
+      rgba(243, 129, 129, 1) 100%
     );
   }
 
@@ -234,19 +238,19 @@ body {
   }
 
   .Main-header ul li.home a {
-    color: rgba(43, 70, 237, 1);
+    color: #7ab8e2;
   }
 
   .Main-header .todos a {
-    color: rgb(196, 242, 213);
+    color: #95e1d3;
   }
 
   .Main-header .notes a {
-    color: #ffff88;
+    color: #fce38a;
   }
 
   .Main-header .pomo a {
-    color: rgba(255, 0, 0, 1);
+    color: #f38181;
   }
 
   .social-icons {

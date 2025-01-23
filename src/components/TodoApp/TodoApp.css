@@ -7,9 +7,9 @@
   background-color: rgb(2, 0, 36, 0.5);
   background: linear-gradient(
     45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(1, 135, 51, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(149, 225, 211, 1) 0%,    /* #95e1d3 */
+    rgba(1, 135, 51, 1) 50%,       /* Middle color */
+    rgba(149, 225, 211, 1) 100%       /* Softer dark end color */
   );
   height: 100vh;
 }
