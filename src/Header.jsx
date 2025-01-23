@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./components/TodoApp/TodoApp.css";
+import icon from "./assets/productivity_icon.png"
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ export const Header = () => {
     <div className="Main-header">
       <img
         className="icon"
-        src="/Productivity-Web-App-icon.png"
+        src={icon}
         alt="App icon"
       />
 
