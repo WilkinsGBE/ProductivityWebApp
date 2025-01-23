@@ -45,14 +45,14 @@ button {
 
 /* the second container with the button */
 .settings-button {
-  width: auto;
+  /* width: auto;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 10px 10px;
   margin-top: 30px;
   font-size: 1.6rem;
   line-height: 36px;
-  justify-self: center;
+  justify-self: center; */
 }
 
 .settings-button svg {
@@ -159,7 +159,7 @@ button {
   }
 
   .settings-button {
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 10px 10px;
     margin-top: 50px;
@@ -174,11 +174,11 @@ button {
     visibility: visible !important;
     opacity: 1 !important;
     min-width: 34px;
-    min-height: 50px;
+    min-height: 50px; */
   }
 
   .settings-button svg {
-    width: 34px;
+    /* width: 34px;
     height: 34px;
     padding-right: 8px;
     color: rgba(255, 255, 255, 0.8);
@@ -186,7 +186,7 @@ button {
     display: flex;
     visibility: visible !important;
     opacity: 1 !important;
-    z-index: 10;
+    z-index: 10; */
   }
 
   /* Settings Page */
