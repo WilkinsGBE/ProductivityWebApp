@@ -153,6 +153,6 @@ section li {
 
 @media (min-width: 1258px) {
   .homepage {
-    height: 100vh;
+    /* height: 100vh; */
   }
 }

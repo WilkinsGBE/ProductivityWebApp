@@ -14,7 +14,6 @@
   height: 100vh;
 }
 
-
 .body {
   display: flex;
   justify-content: center;
@@ -100,10 +99,9 @@ nav ul li.notes:hover a {
   flex-shrink: 0;
   border-radius: 100px;
   background: linear-gradient(
-    45deg,
-    rgba(43, 70, 237, 1) 0%,
-    rgba(1, 135, 51, 1) 50%,
-    rgba(128, 0, 0, 1) 100%
+    rgba(149, 225, 211, 1) 0%,
+    rgba(252, 227, 138, 1) 50%,
+    rgba(243, 129, 129, 1) 100%
   );
   background-blend-mode: multiply;
 }
@@ -273,6 +271,10 @@ input::placeholder {
 
 /* Mobile Screen */
 @media (max-width: 480px) {
+  .todo {
+    padding-bottom: 80px;
+  }
+
   .box {
     width: 80%;
     padding: 18px;
@@ -369,9 +371,9 @@ input::placeholder {
     gap: 30px;
     background: linear-gradient(
       90deg,
-      rgba(43, 70, 237, 1) 0%,
-      rgba(1, 135, 51, 1) 50%,
-      rgba(128, 0, 0, 1) 100%
+      rgba(149, 225, 211, 1) 0%,
+      rgba(252, 227, 138, 1) 50%,
+      rgba(243, 129, 129, 1) 100%
     );
   }
 

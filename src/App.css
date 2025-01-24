@@ -17,9 +17,8 @@ body {
   background: linear-gradient(
     90deg,
     rgba(149, 225, 211, 1) 0%,
-    /* #95e1d3 (pastel blue) */ rgba(252, 227, 138, 1) 50%,
-    /* #fce38a (pastel yellow) */ rgba(243, 129, 129, 1) 100%
-      /* #f38181 (pastel pinkish-red) */
+    rgba(252, 227, 138, 1) 50%,
+    rgba(243, 129, 129, 1) 100%
   );
   flex-direction: row;
   justify-content: space-around;
