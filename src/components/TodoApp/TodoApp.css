@@ -7,11 +7,12 @@
   background-color: rgb(2, 0, 36, 0.5);
   background: linear-gradient(
     45deg,
-    rgba(149, 225, 211, 1) 0%,    /* #95e1d3 */
-    rgba(1, 135, 51, 1) 50%,       /* Middle color */
-    rgba(149, 225, 211, 1) 100%       /* Softer dark end color */
+    rgba(149, 225, 211, 1) 0%,    
+    rgba(1, 135, 51, 1) 50%,      
+    rgba(149, 225, 211, 1) 100%       
   );
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 .body {
@@ -199,6 +200,15 @@ input::placeholder {
 .delete-icon {
   cursor: pointer;
   width: 14px;
+}
+
+/* Menu for Mobile */
+.menu-container {
+  display: none; /* Hidden by default */
+}
+
+.open-menu-icon {
+  display: none; /* Hidden by default */
 }
 
 /* TodoItems code is over this */
@@ -438,6 +448,10 @@ input::placeholder {
 
 /* Large Screen (e.g., desktops wider than 1200px) */
 @media (min-width: 1200px) {
+  .todo {
+    /* height: 100vh; */
+  }
+  
   .box {
     width: 70%;
     max-width: 800px; /* Allow more content on wider screens */
@@ -458,15 +472,28 @@ input::placeholder {
   .delete-icon {
     width: 16px;
   }
-}
 
-/* Menu for Mobile */
-.menu-container {
-  display: none; /* Hidden by default */
-}
+  .desktop-nav-links {
+    display: block; /* Show desktop navigation links */
+  }
 
-.open-menu-icon {
-  display: none; /* Hidden by default */
+  .menu-container,
+  .open-menu-icon {
+    display: none; /* Hide menu on tablets/PC */
+  }
+
+  .pages-nav-links ul a {
+    font-size: 25px;
+  }
+
+  .Main-header h1 {
+    font-size: 30px;
+  }  
+
+  .icon {
+    margin-left: 0px;
+  }
+  
 }
 
 /* Display the menu icon and container for screens smaller than 768px */
@@ -495,29 +522,5 @@ input::placeholder {
 
   .icon {
     margin-left: -40px;
-  }
-}
-
-/* For tablet and larger screen sizes, show the desktop links */
-@media (min-width: 1150px) {
-  .desktop-nav-links {
-    display: block; /* Show desktop navigation links */
-  }
-
-  .menu-container,
-  .open-menu-icon {
-    display: none; /* Hide menu on tablets/PC */
-  }
-
-  .pages-nav-links ul a {
-    font-size: 25px;
-  }
-
-  .Main-header h1 {
-    font-size: 30px;
-  }  
-
-  .icon {
-    margin-left: 0px;
   }
 }

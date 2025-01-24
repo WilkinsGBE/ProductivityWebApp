@@ -49,6 +49,7 @@ textarea:focus {
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
   width: 50px;
+  text-align: center;
 }
 
 .save:hover {
@@ -127,6 +128,7 @@ textarea:focus {
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   width: 6rem;
+  text-align: center;
 }
 
 .light-mode {

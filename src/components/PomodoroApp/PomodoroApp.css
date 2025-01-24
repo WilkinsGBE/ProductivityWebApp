@@ -3,20 +3,19 @@
   background: linear-gradient(
     45deg,
     rgba(243, 129, 129, 1) 0%,
-    /* #f38181 */ rgba(128, 0, 0, 1) 50%,
-    /* Middle color */ rgba(40, 40, 50, 1) 100% /* Softer dark end color */
+    rgba(128, 0, 0, 1) 50%,
+    rgba(40, 40, 50, 1) 100%
   );
   color: white;
-  height: 100vh;
 }
 
 main {
   max-width: 450px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   align-content: center;
-  height: 100vh;
 }
 
 button {
@@ -125,11 +124,10 @@ button {
     background: linear-gradient(
       45deg,
       rgba(243, 129, 129, 1) 0%,
-      /* #f38181 */ rgba(128, 0, 0, 1) 50%,
-      /* Middle color */ rgba(40, 40, 50, 1) 100% /* Softer dark end color */
+      rgba(128, 0, 0, 1) 50%,
+      rgba(40, 40, 50, 1) 100%
     );
     color: white;
-    min-height: 100vh;
   }
 
   main {
@@ -246,3 +244,4 @@ button {
     opacity: 1 !important;
   }
 }
+
