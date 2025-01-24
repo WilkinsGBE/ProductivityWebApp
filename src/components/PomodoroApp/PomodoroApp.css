@@ -245,3 +245,10 @@ button {
   }
 }
 
+@media (min-height: 100px) and (min-width: 1000px){
+  .pomodoro {
+    padding-top: 100px;
+    padding-bottom: 450px;
+  }
+}
+

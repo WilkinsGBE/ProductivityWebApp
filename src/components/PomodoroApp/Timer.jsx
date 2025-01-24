@@ -70,7 +70,7 @@ export const Timer = (props) => {
   if (seconds < 10) seconds = "0" + seconds;
 
   return (
-    <div>
+    <>
       <div className={props.className}>
         {/* circular bar from https://www.npmjs.com/package/react-circular-progressbar */}
         <CircularProgressbar
@@ -108,6 +108,6 @@ export const Timer = (props) => {
           onClick={() => settingsInfo.setShowSettings(true)}
           className="settings-button"
         />
-    </div>
+    </>
   );
 };
