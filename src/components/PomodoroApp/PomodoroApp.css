@@ -18,6 +18,12 @@ main {
   align-content: center;
 }
 
+.timer {
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
 button {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.8);
@@ -40,18 +46,6 @@ button {
 .pause-button {
   width: 25%;
   visibility: visible;
-}
-
-/* the second container with the button */
-.settings-button {
-  /* width: auto;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  padding: 10px 10px;
-  margin-top: 30px;
-  font-size: 1.6rem;
-  line-height: 36px;
-  justify-self: center; */
 }
 
 .settings-button svg {
@@ -156,37 +150,6 @@ button {
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .settings-button {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin-top: 50px;
-    font-size: 1.4rem;
-    line-height: 36px;
-    justify-self: center;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    z-index: 10;
-    visibility: visible !important;
-    opacity: 1 !important;
-    min-width: 34px;
-    min-height: 50px;
-  }
-
-  .settings-button svg {
-    width: 34px;
-    height: 34px;
-    padding: 100px;
-    color: rgba(255, 255, 255, 0.8);
-    stroke: rgba(255, 255, 255, 0.8);
-    display: flex;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 10;
-  }
-
   /* Settings Page */
   .settings-page {
     text-align: left;
@@ -210,38 +173,6 @@ button {
     width: 34px;
     height: 34px;
     padding-right: 8px;
-  }
-}
-
-@media (max-width: 1370px) {
-  .settings-button {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin-top: 50px;
-    font-size: 1.4rem;
-    line-height: 36px;
-    justify-self: center;
-    width: 140px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    z-index: 10;
-    visibility: visible !important;
-    opacity: 1 !important;
-    min-width: 100px;
-    min-height: 50px;
-  }
-
-  .settings-button svg {
-    width: 50px;
-    height: 50px;
-    padding-right: 100px;
-    color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    z-index: 10;
-    visibility: visible !important;
-    opacity: 1 !important;
   }
 }
 

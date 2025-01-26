@@ -71,7 +71,8 @@ export const Timer = (props) => {
 
   return (
     <>
-      <div className={props.className}>
+    <div className={props.className}>
+      <div className="progressbar">
         {/* circular bar from https://www.npmjs.com/package/react-circular-progressbar */}
         <CircularProgressbar
           value={percentage}
@@ -107,7 +108,9 @@ export const Timer = (props) => {
         <SettingsButton
           onClick={() => settingsInfo.setShowSettings(true)}
           className="settings-button"
-        />
+        />      
+    </div>
+
     </>
   );
 };
